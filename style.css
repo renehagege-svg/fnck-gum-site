@@ -134,6 +134,41 @@ nav .links .cta-nav {
 .card-reset { background: var(--slate); color: var(--cream); }
 .card-spark { background: var(--bordeaux); color: var(--cream); }
 
+/* PRODUCT IMAGES GRID */
+.product-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
+.product-img-card img {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 16px;
+  border-radius: 4px;
+}
+.product-img-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+.product-img-card .price {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.product-img-card button {
+  padding: 10px 28px;
+  background: var(--chocolate);
+  color: var(--cream);
+  border: none;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 /* MANIFESTO */
 .manifesto { text-align: center; max-width: 700px; margin: 0 auto; }
 .manifesto h2 { font-family: 'Playfair Display', serif; font-size: clamp(26px, 4vw, 40px); margin-bottom: 20px; line-height: 1.2; }
